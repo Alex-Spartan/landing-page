@@ -53,7 +53,7 @@ const Main = () => {
       </div>
       <div className="py-16 pt-12 bg-primary flex flex-col items-center justify-center gap-8">
         <SectionText title="Have Any Project In Mind?" className="text-background" section={false} lineColor="bg-background"/>
-        <button className="mt-4 py-3 px-16 rounded-sm shadow-sm font-semibold bg-background text-primary">Hire me</button>
+        <button className="mt-4 py-3 px-16 relative z-10 rounded-sm shadow-sm font-semibold bg-background text-primary">Hire me</button>
       </div>
     </div>
   );

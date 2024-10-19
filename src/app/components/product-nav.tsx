@@ -2,43 +2,22 @@
 import { useState } from "react";
 
 const ProductNav = () => {
-  const [active, setActive] = useState<boolean>(false);
-  const handleClick = () => {
-    setActive(!active);
+  const [active, setActive] = useState<string>("All");
+  const handleClick = (tab: string) => {
+    setActive(tab);
   };
   return (
     <nav>
       <ul className="flex justify-center items-center gap-10">
-        <li
-          onClick={handleClick}
-          className={active ? "text-primary border-b border-primary" : ""}
-        >
-          All
-        </li>
-        <li
-          onClick={handleClick}
-          className={active ? `text-primary border-b border-primary` : ""}
-        >
-          Branding Goals
-        </li>
-        <li
-          onClick={handleClick}
-          className={active ? `text-primary border-b border-primary` : ""}
-        >
-          Photography
-        </li>
-        <li
-          onClick={handleClick}
-          className={active ? `text-primary border-b border-primary` : ""}
-        >
-          True Perfection
-        </li>
-        <li
-          onClick={handleClick}
-          className={active ? `text-primary border-b border-primary` : ""}
-        >
-          Web Design
-        </li>
+        {["All", "Branding Goals", "Photography", "True Perfection", "Web Design"].map((tab) => (
+          <li
+            key={tab}
+            onClick={() => handleClick(tab)}
+            className={active === tab ? "text-primary border-b border-primary" : ""}
+          >
+            {tab}
+          </li>
+        ))}
       </ul>
     </nav>
   );
