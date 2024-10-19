@@ -14,13 +14,13 @@ const Products = () => {
     <div>
       <ProductNav />
       <div className="mt-8">
-        <div className="grid grid-cols-4 grid-rows-3 gap-12 justify-center items-center">
-            <Image className="col-span-2 row-span-2" quality={100} src={coffeeCup2} width={600} alt="cup" />
+        <div className="grid grid-cols-4 grid-rows-3 gap-8 justify-center items-center">
+            <Image className="col-span-2 row-span-2" quality={100} src={coffeeCup2} width={620} alt="cup" />
             <Image className="col-span-1 row-span-1" quality={100} src={coffeeCup1} width={300} alt="cup" />
             <Image className="col-span-1 row-span-1" quality={100} src={coffeeCup5} width={300} alt="cup" />
             <Image className="col-span-1 row-span-1" quality={100} src={coffeeCup4} width={300} alt="cup" />
             <Image className="col-span-1 row-span-1" quality={100} src={coffeeCup6} width={300} alt="cup" />
-            <Image className="col-span-2 row-span-1" quality={100} src={coffeeCup9} width={600} alt="cup" />
+            <Image className="col-span-2 row-span-1" quality={100} src={coffeeCup9} width={620} alt="cup" />
             <Image className="col-span-1 row-span-1" quality={100} src={coffeeCup3} width={300} alt="cup" />
             <Image className="col-span-1 row-span-1" quality={100} src={coffeeCup7} width={300} alt="cup" />
         </div>
